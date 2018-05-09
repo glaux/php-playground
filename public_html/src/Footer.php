@@ -62,7 +62,7 @@ class Footer {
     <ul class="footernavigation">
       <li>
         <p>
-            <span style="padding: 0 14px;">PHP playgrond</span>
+            <span style="padding: 0 14px;">PHP playground</span>
           | <span style="padding: 0 14px;">Test and ideas</span>
           | <span style="padding: 0 14px;">Last updated: $updated</span>
 

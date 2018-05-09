@@ -1,5 +1,5 @@
 <?php
 
-require 'cms.php';
+// require 'cms.php';
 
-// echo 'Hello World!';
+echo 'Hello World!';

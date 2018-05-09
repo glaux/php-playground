@@ -7,7 +7,7 @@ services:
     build: .
     container_name: play
     ports:
-      - "8080:80"
+      - "1234:80"
     volumes:
       - ./public_html:/var/www/html
 
