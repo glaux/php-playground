@@ -1,0 +1,5 @@
+<?php
+
+PLAY\Redirect::go('/');
+
+?>

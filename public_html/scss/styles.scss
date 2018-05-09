@@ -1,0 +1,385 @@
+.center { text-align: center; }
+.clear { clear: both; }
+.rounded { border-radius: 20px; }
+.inline { display: inline-block; }
+.floatleft { float: left; }
+.floatright { float: right; }
+.seeme { color: #f07010; }
+
+
+body {
+  font-family: "verdana";
+  background-color: #111;
+  color: #000;
+}
+
+p {
+  text-align: justify;
+  text-justify: newspaper;
+  span.hide { display: none; }
+}
+
+a {
+  color: #004292;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition-property: color, text;
+  -webkit-transition-duration: 600ms;
+  -webkit-transition-timing-function: linear, ease-in;
+  -moz-transition-property: color, text;
+  -moz-transition-duration: 600ms;
+  -moz-transition-timing-function: linear, ease-in;
+  transition-property: color, text;
+  transition-duration: 600ms;
+  transition-timing-function: linear, ease-in;
+  &:hover {
+    color: #ffaa00;
+  }
+}
+
+hr {
+  border: 0;
+  width: 70%;
+  text-align: center;
+  margin: 3em auto 3em;
+  color: #004282;
+  background-color: #004282;
+  height: 1px;
+}
+
+h1 {
+  font-size: 16pt;
+  padding: 0.5em 0em 1.0em 0em;
+  color: #000;
+}
+
+h2 {
+  font-size: 16pt;
+  color: #000;
+}
+
+h3 {
+  font-size: 11pt;
+  padding: 1em 0em 0.5em 0em;
+  color: #000;
+}
+
+h4 {
+  font-size: 8pt;
+  color: #000000;
+}
+
+h5 {
+  font-size: 10pt;
+  color: #fff;
+}
+
+// Main layout containers
+
+.background {
+  text-align: center;
+}
+
+.sheet {
+  position: relative;
+  margin: 0em auto;
+  padding: 1em;
+  width: 1024px;
+  color: #000;
+  text-align: left;
+}
+
+.content {
+  line-height: 1.7em;
+  background: #fff;
+  margin: 150px 0 0 0;
+  p { margin-bottom: 1.5em; }
+}
+
+.contentContainer {
+  margin: 0em 0em 0em 0em;
+  padding: 4em 8em 4em 8em;
+}
+
+
+
+// Tabel
+
+.indholdsheader {
+  text-align:left;
+  background:#777;
+  padding: 0 0 0 4em;
+  color: #eee;
+  border-radius: 7px;
+  text-shadow: 0 1px 1px rgba(20,20,20,1);
+}
+
+.level2 {
+  margin-left: 4em;
+  font-style: italic;
+}
+
+// Menu
+
+.header {
+  background-image: url('/img/menubanner.jpg');
+  position: absolute;
+  top: 86px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: #004282;
+  height: 150px;
+  width: 1024px;
+}
+
+.menu {
+  position: relative;
+  width: 1024px;
+  top: 0em;
+  left: 0em;
+  background: #ffffff;
+  height: 70px;
+  // font-size: 10pt;
+}
+
+.menubox {
+  position: relative;
+  top: 170px;
+  padding: 0;
+  float: right;
+}
+
+.menu-header {
+  cursor: default;
+}
+
+.menunavigation {
+  position: relative;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
+  background: url('/img/gradient.png') repeat-x 0 -110px;
+  line-height: 100%;
+  display: inline-block;
+  border-radius: 2em;
+  box-shadow: 0 1px 3px rgba(0,0,0, .4);
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+  li {
+    margin: 0 5px;
+    padding: 4px 0 4px;
+    float: left;
+    position: relative;
+    list-style: none;
+    &:hover > ul { display: block; }
+  }
+  a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding:  8px 20px;
+    margin: 0;
+    border-radius: 1.6em;
+    text-shadow: 0 1px 1px rgba(0,0,0, .3);
+    &:hover {
+      background: #eee;
+      color: #444;
+    }
+  }
+  ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    position: absolute;
+    z-index: 12;
+    top: 36px;
+    left: 0;
+    background: #eee;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0, .3);
+    ul {
+      left: 181px;
+      top: -3px;
+    }
+    li {
+      float: none;
+      margin: 0;
+      padding: 0;
+      border-radius: 9px;
+      &:hover {
+        > a {
+          background:  #eee;
+          color: #444;
+          border-top: solid 1px #f8f8f8;
+          box-shadow: 0 1px 1px rgba(0,0,0, .2);
+          text-shadow: 0 1px 0 rgba(255,255,255, 1);
+        }
+        a {
+          background: none;
+          border: none;
+          color: #444;
+          box-shadow: none;
+        }
+        li a {
+          background: none;
+          border: none;
+          color: #444;
+          box-shadow: none;
+        }
+      }
+    }
+    a {
+      font-weight: normal;
+      text-shadow: 0 1px 0 #fff;
+      &:hover {
+        background: #eee;
+        color: #ffaa00 !important;
+        border-radius: 0;
+        text-shadow: 0 1px 1px rgba(0,0,0, .1);
+      }
+    }
+  }
+}
+
+
+// Footer
+
+.footer {
+  position: relative;
+  width: 1024px;
+  top: 0em;
+  left: 0em;
+  background: #ffffff;
+  background-image: url('/img/footerbanner.jpg');
+  background-repeat: no-repeat;
+  height: 75px;
+  font-size: 10pt;
+}
+
+.footerbox {
+  position: relative;
+  text-align: center;
+  top: 0.7em;
+  h5 { color: #000; }
+  a { color: #000; }
+}
+
+.footernavigation {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: url('/img/gradient.png') repeat-x 0 -110px;
+  line-height: 100%;
+  display: inline-block;
+  border-radius: 2em;
+  box-shadow: 0 1px 3px rgba(0,0,0, .4);
+  li {
+    float: center;
+    position: relative;
+    list-style: none;
+  }
+  p {
+    font-weight: bold;
+    margin: 11px 0;
+    color: #000;
+    text-decoration: none;
+    padding: 0px 20px;
+    border-radius: 1.6em;
+    text-shadow: 0 1px 1px rgba(0,0,0, .3);
+  }
+  a {
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    padding:  4px 14px;
+    border-radius: 1.6em;
+    text-shadow: 0 1px 1px rgba(0,0,0, .3);
+    &:hover {
+      color: #444;
+      background:  #eee;
+      box-shadow: 0 1px 1px rgba(0,0,0, .2);
+      text-shadow: 0 1px 0 rgba(255,255,255, 1);
+    }
+  }
+}
+
+
+// Facebook
+
+.facebookOuter {
+  background-color:#F4F4F4;
+  width:325px;
+  padding:10px 0 10px 10px;
+  height:500px;
+  border:1px solid #CCCCCC;
+  margin-bottom: 4em;
+  margin-top: 21px;
+  float: right;
+}
+.facebookInner {
+  height:500px;
+  overflow:hidden;
+}
+
+// img
+
+.centerbox {
+  text-align: center;
+  width: 100%;
+  padding: 0em;
+}
+
+.dobbelbox { width: 100%; padding: 0; }
+
+.pictureContainer {
+  position: relative;
+  margin: 0px auto;
+  padding: 1em 0 0 0;
+  border-radius: 10px;
+}
+
+.centerCaptionContainer {
+  text-align: center;
+  margin: 0px auto;
+  padding: 0;
+  p {
+    text-align: center;
+    margin-bottom: 0em;
+  }
+  h4 {
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+}
+
+.floatLeft, .floatRight {
+  float: left;
+  width: 50%;
+  margin: 0;
+  padding: 2em 0 2em 0;
+  /*background-color: #aed;*/
+}
+
+.floatRight {
+  float: right;
+  width: 46%;
+  margin: 0;
+}
+
+.clearLeftRight {
+  height: 0;
+  margin: 0;
+  font-size: 1px;
+  padding: 0;
+  line-height: 0;
+  clear: both;
+}
