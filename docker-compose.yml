@@ -2,10 +2,12 @@ version: '3.3'
 
 services:
 
-  backpackerguiden:
+  play:
     image: nicolaj/php-playground
     build: .
     container_name: play
+    env_file:
+      - .env
     ports:
       - "1234:80"
     volumes:
