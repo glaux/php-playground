@@ -29,15 +29,11 @@ class Header {
 
 <div class="header"></div>
 <div class="menu">
-  <div class="menubox">
-    <ul class="menunavigation">
-      $menu
-    </ul>
-  </div>
+  $menu
 </div>
 HTML;
 
   return $header;
-  }
 
+  }
 }

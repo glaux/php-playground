@@ -184,7 +184,7 @@ h5 {
 }
 
 /* line 145, ../scss/styles.scss */
-.menubox {
+[role=navigation] {
   position: relative;
   top: 170px;
   padding: 0;
@@ -197,7 +197,7 @@ h5 {
 }
 
 /* line 156, ../scss/styles.scss */
-.menunavigation {
+[role=navigation] > ul {
   position: relative;
   margin: 0;
   margin-right: 20px;
@@ -209,7 +209,7 @@ h5 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 /* line 166, ../scss/styles.scss */
-.menunavigation:after {
+[role=navigation] > ul:after {
   content: ".";
   display: block;
   clear: both;
@@ -218,7 +218,7 @@ h5 {
   height: 0;
 }
 /* line 174, ../scss/styles.scss */
-.menunavigation li {
+[role=navigation] > ul li {
   margin: 0 5px;
   padding: 4px 0 4px;
   float: left;
@@ -226,11 +226,11 @@ h5 {
   list-style: none;
 }
 /* line 180, ../scss/styles.scss */
-.menunavigation li:hover > ul {
+[role=navigation] > ul li:hover > ul {
   display: block;
 }
 /* line 182, ../scss/styles.scss */
-.menunavigation a {
+[role=navigation] > ul a {
   font-weight: bold;
   color: #000;
   text-decoration: none;
@@ -241,12 +241,12 @@ h5 {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
 }
 /* line 191, ../scss/styles.scss */
-.menunavigation a:hover {
+[role=navigation] > ul a:hover {
   background: #eee;
   color: #444;
 }
 /* line 196, ../scss/styles.scss */
-.menunavigation ul {
+[role=navigation] > ul ul {
   display: none;
   margin: 0;
   padding: 0;
@@ -261,19 +261,19 @@ h5 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 /* line 209, ../scss/styles.scss */
-.menunavigation ul ul {
+[role=navigation] > ul ul ul {
   left: 181px;
   top: -3px;
 }
 /* line 213, ../scss/styles.scss */
-.menunavigation ul li {
+[role=navigation] > ul ul li {
   float: none;
   margin: 0;
   padding: 0;
   border-radius: 9px;
 }
 /* line 219, ../scss/styles.scss */
-.menunavigation ul li:hover > a {
+[role=navigation] > ul ul li:hover > a {
   background: #eee;
   color: #444;
   border-top: solid 1px #f8f8f8;
@@ -281,26 +281,26 @@ h5 {
   text-shadow: 0 1px 0 white;
 }
 /* line 226, ../scss/styles.scss */
-.menunavigation ul li:hover a {
+[role=navigation] > ul ul li:hover a {
   background: none;
   border: none;
   color: #444;
   box-shadow: none;
 }
 /* line 232, ../scss/styles.scss */
-.menunavigation ul li:hover li a {
+[role=navigation] > ul ul li:hover li a {
   background: none;
   border: none;
   color: #444;
   box-shadow: none;
 }
 /* line 240, ../scss/styles.scss */
-.menunavigation ul a {
+[role=navigation] > ul ul a {
   font-weight: normal;
   text-shadow: 0 1px 0 #fff;
 }
 /* line 243, ../scss/styles.scss */
-.menunavigation ul a:hover {
+[role=navigation] > ul ul a:hover {
   background: #eee;
   color: #ffaa00 !important;
   border-radius: 0;
