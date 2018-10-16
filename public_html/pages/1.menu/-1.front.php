@@ -1,5 +1,5 @@
 <?php
 
-PLAY\Redirect::go('/');
+Triangle\Core\Redirect::go('/');
 
 ?>

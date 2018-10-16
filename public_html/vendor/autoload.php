@@ -1,22 +1,20 @@
 <?php
 
-require 'kint.php';
-
 /**
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
- * would cause the function to attempt to load the \PLAY\Baz\Qux class
+ * would cause the function to attempt to load the \Triangle\Baz\Qux class
  * from /path/to/project/src/Baz/Qux.php:
  *
- *      new \PLAY\Baz\Qux;
+ *      new \Triangle\Baz\Qux;
  *
  * @param string $class The fully-qualified class name.
  * @return void
  */
 class CustomAutoloader {
 
-  const PROJECT_NAMESPACE = 'PLAY\\';
+  const PROJECT_NAMESPACE = 'Triangle\\';
   const BASE_DIR = __DIR__ . '/../src/';
 
   public function register($class_name) {

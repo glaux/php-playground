@@ -3,13 +3,20 @@ version: '3.3'
 services:
 
   app:
-    image: nicolaj/php-playground
+    image: glaux/php-playground
     build: .
     container_name: play
     env_file:
       - .env
-    ports:
-      - "1234:80"
+    # ports:
+    #   - "1234:80"
+    expose:
+      - "80"
     volumes:
       - ./public_html:/var/www/html
 
+networks:
+  default:
+    external:
+      name: webproxy
+# https://github.com/evertramos/docker-compose-letsencrypt-nginx-proxy-companion
