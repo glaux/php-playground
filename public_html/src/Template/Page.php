@@ -57,7 +57,7 @@ $html = <<<HTML
 <body>
 
   <div class="background">
-    <div class="sheet">
+    <div class="sheet hue-rotate">
       $header
       <div class="content">
         <div class="contentContainer">
@@ -120,5 +120,3 @@ HTML;
 //       <!--$footer-->
 //     </div>
 //   </div>
-
-

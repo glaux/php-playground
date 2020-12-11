@@ -9,9 +9,27 @@
 
 body {
   font-family: "verdana";
-  background-color: #111;
+  // background-color: #111;
   color: #000;
 }
+
+.hue-rotate {
+  // From https://getcockpit.com/
+  background-color: pink;
+  background-image: radial-gradient(farthest-corner at 45px 45px , pink 0%, #d1e6fa 100%);
+  animation: hue-rotation 100s linear 0ms infinite !important;
+}
+
+@keyframes hue-rotation {
+  0% {
+    filter: hue-rotate(0);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 
 p {
   text-align: justify;

@@ -1,5 +1,5 @@
 # from https://www.drupal.org/requirements/php#drupalversions
-FROM php:7.2-apache
+FROM php:7.4-apache
 
 # Activate the rewrite_module
 # RUN set -ex; \
@@ -17,12 +17,13 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
       libjpeg-dev \
       libpng-dev \
       libpq-dev \
+      libzip-dev \
       curl \
       wget \
       vim \
       git \
       unzip \
-      mysql-client \
+      default-mysql-client \
     ;
 
 # Install PHP extensions
